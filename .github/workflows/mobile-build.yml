@@ -23,12 +23,13 @@ jobs:
           distribution: temurin
           java-version: '17'
       # GitHub-hosted Ubuntu runners already include Android SDK command-line tools.
-      - name: Confirm Android SDK
-        run: |
-          echo "ANDROID_HOME=$ANDROID_HOME"
-          sdkmanager --version
       - name: Install Android API 36 and build tools
-        run: sdkmanager 'platforms;android-36' 'build-tools;36.0.0'
+        run: |
+          SDK_MANAGER="$(find "$ANDROID_HOME/cmdline-tools" -type f -path '*/bin/sdkmanager' | head -n 1)"
+          test -n "$SDK_MANAGER" || { echo "Android SDK cmdline-tools missing"; exit 1; }
+          "$SDK_MANAGER" --version
+          yes | "$SDK_MANAGER" --licenses >/dev/null || true
+          "$SDK_MANAGER" 'platforms;android-36' 'build-tools;36.0.0'
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.13'
