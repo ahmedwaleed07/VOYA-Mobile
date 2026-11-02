@@ -1,0 +1,13 @@
+.DS_Store
+**/.gradle/
+**/build/
+**/.idea/
+**/*.iml
+**/local.properties
+**/*.xcuserstate
+**/xcuserdata/
+**/DerivedData/
+*.jks
+*.keystore
+*.p12
+*.mobileprovision

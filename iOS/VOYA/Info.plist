@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key><string>en</string>
+    <key>CFBundleDisplayName</key><string>VOYA</string>
+    <key>CFBundleExecutable</key><string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key><string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
+    <key>CFBundleName</key><string>$(PRODUCT_NAME)</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>0.1.0</string>
+    <key>CFBundleVersion</key><string>1</string>
+    <key>LSRequiresIPhoneOS</key><true/>
+    <key>UILaunchScreen</key><dict/>
+    <key>UIRequiredDeviceCapabilities</key><array><string>arm64</string></array>
+    <key>UISupportedInterfaceOrientations</key>
+    <array><string>UIInterfaceOrientationPortrait</string><string>UIInterfaceOrientationLandscapeLeft</string><string>UIInterfaceOrientationLandscapeRight</string></array>
+    <key>NSCameraUsageDescription</key><string>VOYA uses your camera only when you choose to start a live broadcast or capture a photo.</string>
+    <key>NSMicrophoneUsageDescription</key><string>VOYA uses your microphone only for live broadcasts you initiate.</string>
+    <key>NSLocationWhenInUseUsageDescription</key><string>VOYA uses your location when you choose to explore nearby places or tag a broadcast.</string>
+    <key>NSPhotoLibraryUsageDescription</key><string>VOYA lets you choose photos or videos to share.</string>
+    <key>NSPhotoLibraryAddUsageDescription</key><string>VOYA may save media when you explicitly request it.</string>
+    <key>ITSAppUsesNonExemptEncryption</key><false/>
+</dict>
+</plist>

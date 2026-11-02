@@ -1,0 +1,14 @@
+VOYA Mobile CI Preview — Verification report (2026-11-01)
+Source archive: VOYA-Mobile-CI-Ready.zip
+Static source assertions: 28/28 PASS
+Swift frontend syntax parser: PASS
+Xcode project pbxproj format: PASS (plutil)
+ZIP integrity: PASS
+Android Gradle compilation: NOT RUN — gradle, sdkmanager unavailable; network DNS to dependencies unavailable
+Apple xcodebuild compilation: NOT RUN — Xcode unavailable on Linux
+GitHub repository: NOT FOUND in linked repositories (VOYA-Mobile)
+GitHub Actions CI: NOT RUN
+Android APK: NOT PRODUCED
+Android AAB: NOT PRODUCED
+iOS IPA / TestFlight: NOT PRODUCED
+Production readiness: NO — WebView preview source only
